@@ -1,0 +1,7 @@
+.logo {
+  @include font($wS, 700, 24px);
+  color: $main-yellow;
+  span {
+    color: $main-blue;
+  }
+}

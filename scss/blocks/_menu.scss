@@ -1,0 +1,37 @@
+.menu {
+  @media (max-width: 880px) {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    border-bottom: .5px solid $main-blue;
+    &.open {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      background-color: #fff;
+      margin-left: 0;
+      margin-right: 0; 
+    }
+  }
+  &__link {
+    margin-left: 30px;
+    @include font($muk, 700, 20px);
+    text-transform: uppercase;
+    color: $main-blue;
+    transition: .5s;
+    &:hover {
+      color: $main-yellow;
+    }
+    @media (max-width: 880px) {
+      margin-left: 0;
+      padding: 10px 0;
+      border-top: .5px solid $main-blue;
+    }
+  }
+  &_active {
+    color: $main-yellow;
+  }
+}

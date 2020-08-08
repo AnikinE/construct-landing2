@@ -1,0 +1,9 @@
+.search {
+  width: 25px;
+  height: 25px;
+  background: none;
+  transition: .5s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

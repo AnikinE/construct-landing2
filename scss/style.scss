@@ -1,0 +1,22 @@
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+
+body {
+  @include font($nun, 400, 10px);
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+@import 'blocks/container';
+@import 'blocks/header/header';
+@import 'blocks/header/header-top';
+@import 'blocks/header/header-bottom';
+@import 'blocks/logo';
+@import 'blocks/menu';
+@import 'blocks/burger';
+@import 'blocks/search';
+@import 'blocks/modals/modal';
+@import 'blocks/modals/modal-search';
+

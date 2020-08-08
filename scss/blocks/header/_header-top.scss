@@ -1,0 +1,25 @@
+.header-top {
+  background-color: $main-blue;
+  &__inner {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__mail,
+  &__phone {
+    color: #fff;
+    @include font($nun, 300, 14px);
+    font-style: italic;
+  }
+  &__mail {
+    @media (max-width: 400px) {
+      display: none;
+    }
+  }
+  &__phone {
+    @media (max-width: 400px) {
+      margin: 0 auto;
+    }
+  }
+}

@@ -5,11 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <a class="header-top__mail" href="mailto: example@compan.com">
+            <img class="header-top__img" src="img/email-icon.png" alt="">
+            example@compan.com
+          </a>
+          <a class="header-top__phone" href="tel:9888555454453334">Call: +9888 5554 5445 3334</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom__inner">
+          <div class="logo"><span>CONS</span>TRUCT</div>
+          <nav class="menu header-bottom__menu" id="nav">
+            <a class="menu__link" href="#">Home</a>
+            <a class="menu__link" href="#">Features</a>
+            <a class="menu__link" href="#">Projects</a>
+            <a class="menu__link" href="#">Service</a>
+            <a class="menu__link" href="#">Contact us</a>
+          </nav>
+          <button class="search header-bottom__search" type="button" data-modal="#modal_search">
+            <img class="search__img" src="img/loupe.svg" alt="">
+          </button>
+          <button class="burger" type="button" id="navToggle">
+            <img src="img/burger.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
   
+
+
+
+
+  <div class="modal" id="modal_search">
+    <div class="modal__dialog modal__dialog_xs">
+      <button class="modal__close" type="button" data-close>
+        <img src="img/cancel.svg" alt="">
+      </button>
+      <div class="modal-search">
+        <form class="modal-search__form" action="">
+          <input type="text" placeholder="Type here...">
+          <button class="search modal-search__search" type="submit">
+            <img class="search__img" src="img/loupe.svg" alt="">
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/main.js"></script>

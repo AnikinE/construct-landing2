@@ -1,0 +1,20 @@
+/* colors */
+$main-blue: #2d3e50;
+$main-yellow: #ffc000;
+$title: #252c30;
+$text: #232323;
+
+
+/* fonts */
+$nun: 'Nunito Sans', sans-serif;
+$muk: 'Mukta', sans-serif;
+$wS: 'Work Sans', sans-serif;
+
+@mixin font($ff, $fw, $fz) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fz;
+}
+
+
+/* media */
