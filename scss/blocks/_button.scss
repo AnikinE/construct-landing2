@@ -1,0 +1,15 @@
+.button {
+  background-color: $main-yellow;
+  color: #fff;
+  @include font($muk, 700, 18px);
+  width: 270px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 15px;
+  letter-spacing: 1px;
+  transition: all .5s;
+  &:hover {
+    transform: scale(1.1);
+    color: $main-blue;
+  }
+}

@@ -1,0 +1,45 @@
+.template {
+  background-color: #fff;
+  padding: 100px 0;
+  &__intro {
+    margin: 0 auto 50px;
+  }
+  &__panel {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__sheet {
+    flex-basis: calc(25% - 10px);
+    text-align: center;
+    border: .5px solid transparent;
+    border-radius: 5px;
+    padding: 60px 15px 80px;
+    background-color: $main-blue;
+    color: #fff;
+    &:hover {
+      color: $text;
+      background-color: #fff;   
+      border: .5px solid $main-yellow;
+      transition: .5s;
+    }
+  }
+  &__img {
+    width: 77px;
+    height: 77px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto 30px;   
+  }
+  &__title {
+    @include font($muk, 700, 18px);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  &__text {
+    @include font($nun, 400, 14px);
+    line-height: 1.5;
+  }
+}

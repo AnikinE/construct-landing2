@@ -38,4 +38,12 @@ $(function(){
     nav.toggleClass('open');
   });
 
+
+  /* Slider */
+  $('.slider').slick({
+    dots: true,
+    adaptiveHeight: true,
+    
+  });
+
 });

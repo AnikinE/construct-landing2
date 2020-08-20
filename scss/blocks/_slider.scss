@@ -1,0 +1,76 @@
+.slider {
+  padding-top: 80px;
+  height: auto;
+  position: relative;
+  &__item {
+    padding: 220px 0;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 800px;
+    height: 100%;
+  }
+  &__title {
+    @include font($muk, 700, 72px);
+    color: #fff;
+    max-width: 720px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    span {
+      color: $main-yellow;
+    }
+  }
+  &__description {
+    @include font($nun, 400, 16px);
+    color: #fff;
+    max-width: 645px;
+    margin: 0 auto;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+  }
+  & .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 57px;
+    &.slick-prev {
+      left: 0;
+      margin-left: 15px;
+      background: url(../../img/arrow-left.svg) 0 0 / 100% no-repeat;
+    }
+    &.slick-next {
+      right: 0;
+      margin-right: 15px;
+      background: url(../../img/arrow-right.svg) 0 0 / 100% no-repeat;
+    }
+  }
+  & .slick-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & li {
+      margin: 0 10px;
+      height: 0;
+      &.slick-active button{
+        background-color: $main-blue;
+      }
+    }
+    & button {
+      font-size: 0;
+      width: 50px;
+      height: 5px;
+      border: .5px solid #fff;
+      border-radius: 5px;
+      background-color: $main-yellow;
+    }
+  }
+}

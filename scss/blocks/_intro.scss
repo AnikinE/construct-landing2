@@ -1,0 +1,21 @@
+.intro {
+  max-width: 750px;
+  text-align: center;
+  &__opening {
+    @include font($nun, 400, 18px);
+    color: $text;
+  }
+  &__title {
+    @include font($muk, 400, 36px);
+    color: $title;
+    padding: 15px 0 20px;
+    span {
+      color: $main-yellow;
+    }
+  }
+  &__text {
+    @include font($nun, 400, 16px);
+    line-height: 1.5;
+    color: $text;
+  }
+}
