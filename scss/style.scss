@@ -3,6 +3,8 @@
 @import 'vars';
 
 body {
+  max-width: 1600px;
+  margin: 0 auto;
   @include font($nun, 400, 10px);
   &.no-scroll {
     overflow: hidden;
@@ -24,4 +26,5 @@ body {
 @import 'blocks/slick';
 @import 'blocks/template';
 @import 'blocks/intro';
+@import 'blocks/services';
 

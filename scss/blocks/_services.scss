@@ -1,0 +1,54 @@
+.services {
+  display: flex;
+  &__wrapper {
+    flex: 0 0 100%;
+  }
+  &__block {
+    width: 50%;
+    transform: translateX(100%);
+    padding-left: 40px;
+  }
+  &__intro {
+    @include font($muk, 700, 36px);
+    color: $main-yellow;
+    margin-bottom: 50px;
+  }
+  &__item {
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 50px;
+    max-width: 500px;
+  }
+  &__icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: $main-blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+  }
+  &__title {
+    @include font($nun, 700, 18px);
+    color: $text;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+  &__text {
+    @include font($nun, 400, 16px);
+    color: $text;
+    line-height: 1.5;
+  }
+  &__img {
+    flex: 0 0 50%;
+    transform: translateX(-200%);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
